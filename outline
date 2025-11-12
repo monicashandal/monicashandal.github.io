@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monica Shandal — Research & Teaching</title>
+  <meta name="description" content="Academic homepage for research, publications, teaching, and CV." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #111827; /* gray-900 */
+      --muted: #6b7280; /* gray-500 */
+      --primary: #0ea5e9; /* sky-500 */
+      --primary-ink: #0c4a6e; /* sky-900 */
+      --card: #f8fafc; /* slate-50 */
+      --border: #e5e7eb; /* gray-200 */
+      --link: #0369a1; /* sky-700 */
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6; }
+    a { color: var(--link); text-decoration-thickness: .08em; text-underline-offset: 2px; }
+    img { max-width: 100%; height: auto; border-radius: 12px; }
+    .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(8px); background: rgba(255,255,255,.8); border-bottom: 1px solid var(--border); z-index: 40; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+    .nav-links a { margin-left: 16px; font-weight: 500; color: var(--ink); opacity: .85; }
+    .nav-links a:hover { opacity: 1; }
+    .hero { padding: 56px 0 28px; display: grid; grid-template-columns: 120px 1fr; grid-gap: 24px; align-items: center; }
+    .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border); }
+    h1 { font-family: Merriweather, Georgia, serif; font-size: 2.2rem; line-height: 1.2; margin: 0 0 6px; }
+    .subtitle { color: var(--muted); margin: 0; }
+    .badges a { display: inline-block; border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; margin-right: 8px; font-size: .9rem; background: var(--card); text-decoration: none; }
+    section { padding: 28px 0; border-top: 1px solid var(--border); }
+    h2 { font-family: Merriweather, Georgia, serif; font-size: 1.5rem; margin: 0 0 12px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 16px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+    .card h3 { margin-top: 0; font-size: 1.05rem; }
+    .pill { display:inline-block; font-size:.8rem; color:#0f766e; background:#ecfeff; border:1px solid #cffafe; padding:2px 8px; border-radius:999px; }
+    .pub { margin-bottom: 14px; }
+    .pub .title { font-weight: 600; }
+    .pub .venue { color: var(--muted); font-size: .95rem; }
+    .list-reset { margin: 0; padding: 0; list-style: none; }
+    footer { padding: 32px 0 56px; color: var(--muted); font-size: .95rem; border-top: 1px solid var(--border); }
+
+    /* Mobile */
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero .badges { display: flex; justify-content: center; flex-wrap: wrap; }
+      .grid { grid-template-columns: 1fr; }
+      nav .nav-links { display: none; }
+    }
+  </style>
+  <!-- Optional: favicon <link rel="icon" href="/assets/favicon.ico"> -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Monica Shandal",
+    "jobTitle":"PhD Candidate, Economics",
+    "affiliation":{"@type":"Organization","name":"University of California, Santa Cruz"},
+    "url":"https://<your-username>.github.io/",
+    "sameAs":[
+      "https://scholar.google.com/citations?user=<id>",
+      "https://orcid.org/<id>",
+      "https://www.linkedin.com/in/<handle>/",
+      "https://twitter.com/<handle>"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div><a href="#" style="text-decoration:none;color:var(--ink);font-weight:700">Monica Shandal</a></div>
+        <div class="nav-links" role="tablist" aria-label="Site sections">
+          <a href="#about" role="tab" aria-selected="true" data-tab="about">About</a>
+          <a href="#research" role="tab" aria-selected="false" data-tab="research">Research</a>
+          <a href="#teaching" role="tab" aria-selected="false" data-tab="teaching">Teaching</a>
+          <a href="#cv" role="tab" aria-selected="false" data-tab="cv">CV</a>
+          <a href="#other" role="tab" aria-selected="false" data-tab="other">Other</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT (default) -->
+    <section class="hero tabpanel" id="about" role="tabpanel" aria-labelledby="tab-about">
+      <img src="assets/avatar.jpg" alt="Portrait" class="avatar" />
+      <div>
+        <h1>Monica Shandal</h1>
+        <p class="subtitle">PhD Candidate, Economics · Environmental & Development</p>
+        <p>My research studies transboundary impacts of plastic waste trade and air pollution on health and livelihoods, with ongoing field work and policy partnerships in South & Southeast Asia.</p>
+        <div class="badges">
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
+          <a href="CV_Monica_Shandal.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="tabpanel" id="research" role="tabpanel" hidden>
+      <h2>Research</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Plastic Waste, Trade Shocks, and Downwind Health</h3>
+          <p><span class="pill">Job Market Paper</span></p>
+          <p>Exploits China’s 2018 National Sword policy as a quasi-experiment to estimate how rerouted plastic waste affects downwind PM2.5 and neonatal outcomes in Indonesia.</p>
+          <ul class="list-reset">
+            <li>• Design: Event study, TWFE, geospatial exposure</li>
+            <li>• Data: Customs flows, Global Plastic Watch, PM2.5 rasters</li>
+          </ul>
+          <p><a href="#">Abstract</a> · <a href="#">Slides</a> · <a href="#">Draft (PDF)</a></p>
+        </article>
+        <article class="card">
+          <h3>Information Intensity & Preventive Behaviors</h3>
+          <p>Analyzes how varying information intensity affects uptake of public health measures in low-resource contexts.</p>
+          <p><a href="#">Working paper</a></p>
+        </article>
+        <article class="card">
+          <h3>Tuberculosis Screening: Cost-Effectiveness</h3>
+          <p>CEA of alternative screening & prevention strategies across risk groups; informs policy targeting.</p>
+          <p><a href="#">Preprint</a></p>
+        </article>
+        <article class="card">
+          <h3>RCTs in Malawi: FP & Behavioral Biases</h3>
+          <p>Design and management of large-scale community RCTs (MFPS, MBBS); collaboration with policymakers.</p>
+          <p><a href="#">Registry</a> · <a href="#">Materials</a></p>
+        </article>
+      </div>
+
+      <section id="publications" style="padding-top:20px">
+        <h2>Publications & Working Papers</h2>
+        <div class="pub">
+          <div class="title">Title of Paper One</div>
+          <div>Author One, <strong>Monica Shandal</strong>, Author Three (2025). <span class="venue">Journal / Working Paper</span>. <a href="#">PDF</a> · <a href="#">BibTeX</a> · <a href="#">Replication</a></div>
+        </div>
+        <div class="pub">
+          <div class="title">Title of Paper Two</div>
+          <div><strong>Monica Shandal</strong> & Coauthor (2024). <span class="venue">Under Review</span>. <a href="#">PDF</a> · <a href="#">Slides</a></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="tabpanel" id="teaching" role="tabpanel" hidden>
+      <h2>Teaching</h2>
+      <ul>
+        <li>Lead Graduate Mentor, UCSC — Mentored junior researchers in R, Stata, and reproducible workflows.</li>
+        <li>Teaching Assistant — Econometrics, Environmental Economics, Development Economics.</li>
+      </ul>
+    </section>
+
+    <!-- CV -->
+    <section class="tabpanel" id="cv" role="tabpanel" hidden>
+      <h2>Curriculum Vitae</h2>
+      <p><a href="CV_Monica_Shandal.pdf" target="_blank" rel="noopener">Download my CV</a>. Place your PDF at <code>/CV_Monica_Shandal.pdf</code> in the repo root.</p>
+      <p>If you prefer an embedded viewer, replace this with a PDF embed or a link to Google Drive.</p>
+    </section>
+
+    <!-- OTHER -->
+    <section class="tabpanel" id="other" role="tabpanel" hidden>
+      <h2>Other</h2>
+      <ul>
+        <li>Service: Seminar organizer, reviewer, mentoring.</li>
+        <li>Media: Talks, interviews, slides, posters.</li>
+        <li>Resources: Syllabi, code, data notes, templates.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Monica Shandal</div>
+      <div>Built with GitHub Pages. Last updated <span id="updated"></span>.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('updated').textContent = new Date().toLocaleDateString();
+
+    // Simple tabs controller
+    const tabs = document.querySelectorAll('[data-tab]');
+    const panels = document.querySelectorAll('.tabpanel');
+
+    function showTab(name){
+      panels.forEach(p => {
+        const isActive = p.id === name;
+        p.hidden = !isActive;
+      });
+      tabs.forEach(t => {
+        const isActive = t.getAttribute('data-tab') === name;
+        t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+    }
+
+    // Initial state from hash or default to about
+    const start = (location.hash || '#about').replace('#','');
+    showTab(start);
+
+    tabs.forEach(t => t.addEventListener('click', (e) => {
+      e.preventDefault();
+      const name = t.getAttribute('data-tab');
+      history.replaceState(null, '', `#${name}`);
+      showTab(name);
+    }));
+  </script>
+</body>
+</html>
